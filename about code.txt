@@ -1,0 +1,11 @@
+These are the imports needed for the code. kivy.app is the base class for creating Kivy applications. kivy.uix.widget provides the building blocks for the GUI. kivy.core.window provides access to the Window object. kivy.lang.builder provides a mechanism for loading a user interface from a string.
+
+This code defines the GUI layout of a calculator widget using the Kivy framework. The GUI is defined using Kivy language, which is a language for creating user interfaces using a declarative syntax.
+
+The code defines two classes - Button and CalculatorWidget. The Button class defines the properties of a button that will be used in the calculator GUI, such as size_hint, background_normal, and background_color. The CalculatorWidget class defines the layout of the calculator, which includes a TextInput field to display the input and output, and a GridLayout that contains the buttons.
+
+The GridLayout is divided into 5 rows and 4 columns, and each cell contains a Button. The buttons are labeled with the numbers 0-9, the arithmetic operators +, -, *, /, the decimal point, and special characters like %, C, and +/-.
+
+Each button is associated with a function that is executed when the button is pressed. For example, when the "+" button is pressed, the function "root.signs('+')" is executed. These functions are defined in the CalculatorWidget class, and they perform the appropriate operation based on the button pressed.
+
+Overall, this code defines the layout and behavior of a basic calculator widget using Kivy.
